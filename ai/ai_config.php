@@ -9,7 +9,7 @@ class AIConfig {
     public static function groqApiKey(): string {
         // Local demo: hardcode your Groq token below and keep it private
         // Example: return 'gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-        return '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';
+        return 'Ai-API-KEY-YOUR';
     }
     public static function temperature(): float {
         return 0.4;
