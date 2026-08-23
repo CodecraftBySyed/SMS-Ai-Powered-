@@ -1,7 +1,7 @@
 <?php
 class AIConfig {
     public static function groqEndpoint(): string {
-        return 'https://api.groq.com/openai/v1/chat/completions';
+        return 'Ai-API-KEY-YOUR';
     }
     public static function groqModel(): string {
         return 'llama-3.1-8b-instant';
