@@ -1,0 +1,137 @@
+[
+  {
+    "intent": "greeting",
+    "keywords": ["hello", "hi", "hey", "greetings", "good morning", "good afternoon"],
+    "response": "Hello! I'm your EduSync AI Assistant. I can help you with student performance, attendance, fees, and more. What would you like to know?"
+  },
+  {
+    "intent": "student_performance",
+    "keywords": ["performance", "progress", "report", "student details", "how is"],
+    "response_template": "Performance of {{student_name}}: Attendance {{attendance}}%, Marks: {{marks}}. Overall academic status is {{status}}."
+  },
+  {
+    "intent": "low_attendance_students",
+    "keywords": ["attendance low", "low attendance", "below 75 attendance", "poor attendance"],
+    "response": "Students with low attendance (below 75%) need immediate follow-up. Please check the Attendance section in the dashboard for detailed records and student names."
+  },
+  {
+    "intent": "attendance_summary",
+    "keywords": ["attendance summary", "attendance overview", "class attendance", "average attendance"],
+    "response": "The class attendance system is tracking all students. Use the Attendance dashboard to view detailed records, weekly summaries, and individual student tracking."
+  },
+  {
+    "intent": "class_strength",
+    "keywords": ["class strength", "student count", "how many students", "total enrollment"],
+    "response": "For current class enrollment numbers, please check the Students section in the dashboard. The count updates as new enrollments are added."
+  },
+  {
+    "intent": "pending_fees",
+    "keywords": ["pending fees dashboard", "where are pending fees", "pending fees section", "pending fees screen"],
+    "response": "Students with pending fees can be viewed in the Fees Management section. Use the dashboard to identify and track fee collections."
+  },
+  {
+    "intent": "fee_status",
+    "keywords": ["fee", "fees", "fee balance", "fees balance", "fee bal", "payment", "balance", "fee due", "pending", "pending amount", "fee status of", "fees of"],
+    "response_template": "Fee status of {{student_name}}: {{fee_status}}. Pending Amount: ₹{{pending_amount}}."
+  },
+  {
+    "intent": "class_topper",
+    "keywords": ["class topper", "highest marks", "top student", "best performer", "rank 1"],
+    "response": "To find the class topper, please check the Marks section in the dashboard. Marks are ranked and displayed for comprehensive academic analysis."
+  },
+  {
+    "intent": "marks_overview",
+    "keywords": ["marks overview", "exam performance", "subject marks", "grades", "test scores"],
+    "response": "Marks for all students and subjects are available in the Marks Management section. You can view, edit, and analyze performance by subject or student."
+  },
+  {
+    "intent": "submit_marks",
+    "keywords": ["submit marks", "marks entry", "add marks", "update marks", "enter marks"],
+    "response": "Marks can be submitted through the Marks section in the dashboard. Select a subject and student(s), then enter marks. Changes are saved automatically."
+  },
+  {
+    "intent": "student_count_total",
+    "keywords": ["total students", "overall student count", "how many students", "enrollment"],
+    "response": "Total student count is displayed on the dashboard. For department-wise breakdown, refer to the Students section."
+  },
+  {
+    "intent": "help_features",
+    "keywords": ["help", "features", "what can you do", "capabilities", "guide"],
+    "response": "I can assist with: Student Performance, Attendance Tracking, Fee Management, Marks Entry, Class Analytics. For detailed operations, use the dashboard menu."
+  },
+  {
+    "intent": "attendance_help",
+    "keywords": ["how to mark attendance", "attendance process", "mark attendance", "attendance entry"],
+    "response": "Use the Attendance section to mark daily attendance. Select the date range, mark present/absent, and save. Weekly reports are automatically generated."
+  },
+  {
+    "intent": "dashboard_info",
+    "keywords": ["dashboard", "statistics", "analytics", "overview", "summary"],
+    "response": "The dashboard shows key statistics: total students, attendance rate, fee collection, and marks distribution. Explore each section for detailed data."
+  },
+  {
+    "intent": "student_not_found",
+    "keywords": ["no students", "not found", "search failed"],
+    "response": "No matching student found. Please verify the name and try again. Use the Students section to check exact names."
+  },
+  {
+    "intent": "technical_issue",
+    "keywords": ["error", "bug", "problem", "not working", "issue"],
+    "response": "If you're experiencing technical issues, please refresh the page or clear your browser cache. If the problem persists, contact your administrator."
+  },
+  {
+    "intent": "contact_support",
+    "keywords": ["contact admin", "help desk", "support", "administrator"],
+    "response": "For technical support or inquiries, please reach out to your institutional administrator or system support team."
+  },
+  {
+    "intent": "help",
+    "keywords": ["help", "what can you do", "options"],
+    "response": "I can assist with student attendance, performance reports, marks, fee status, and class statistics. Please ask a specific question."
+  },
+  {
+    "intent": "student_details_by_name",
+    "keywords": ["tell me about", "show me", "details of", "information about", "profile", "data", "record"],
+    "response_template": "Here are the details for {{student_name}}: Attendance: {{attendance}}%, Average Marks: {{marks}}, Academic Status: {{status}}, Fee Status: {{fee_status}} (Pending: ₹{{pending_amount}})."
+  },
+  {
+    "intent": "attendance_check",
+    "keywords": ["attendance", "attend", "present", "absent", "attendance of", "attendance for", "attendance percentage", "present rate"],
+    "response_template": "{{student_name}}'s attendance is {{attendance}}%. This is based on records from the last 3 months."
+  },
+  {
+    "intent": "marks_check",
+    "keywords": ["marks", "score", "scores", "exam", "test", "tests", "grade", "grades", "result", "results", "marks of"],
+    "response_template": "{{student_name}}'s average marks: {{marks}}/100. Academic Status: {{status}}."
+  },
+  {
+    "intent": "student_phone",
+    "keywords": ["phone", "phone number", "contact number", "mobile", "mobile number"],
+    "response_template": "Phone number of {{student_name}}: {{phone}}."
+  },
+  {
+    "intent": "parent_name",
+    "keywords": ["parent name", "father name", "mother name", "guardian name", "parents name"],
+    "response_template": "Parent/Guardian of {{student_name}}: {{parent_name}}."
+  },
+  {
+    "intent": "parent_phone",
+    "keywords": ["parent phone", "parent phone number", "guardian phone", "father phone", "mother phone"],
+    "response_template": "Parent/Guardian phone for {{student_name}}: {{parent_phone}}."
+  },
+  {
+    "intent": "student_email",
+    "keywords": ["email", "email address", "mail id", "email id"],
+    "response_template": "Email of {{student_name}}: {{email}}."
+  },
+  {
+    "intent": "registration_number",
+    "keywords": ["registration number", "reg no", "reg number", "roll number", "rollno"],
+    "response_template": "Registration number of {{student_name}}: {{reg_no}}."
+  },
+  {
+    "intent": "fee_balance_quick",
+    "keywords": ["pending fees", "fee balance", "fee bal", "balance amount", "due amount", "outstanding fees"],
+    "response_template": "Pending fees for {{student_name}}: ₹{{pending_amount}} ({{fee_status}})."
+  }
+]
